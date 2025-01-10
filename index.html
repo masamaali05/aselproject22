@@ -11,30 +11,31 @@
 <body>
     <div class="container">
         <h2>TodoInput</h2>
-        <div class="todo-input">
+        <div id="todoInput" class="todo-input">
             <i class="fa-solid fa-book"></i>
-            <input type="text" id="newTodo" placeholder="New Todo"><br>
+            <input type="text" id="taskInput" placeholder="New Todo"><br>
             <button id="addTaskBtn">Add new task</button>
         </div>
         <div class="todo-list">
             <h2>TodoList</h2>
-            <div>
                 <div class="filters">
                     <ol class="list">
-                        <li class="li-button"><button id="all">All</button></li>
-                        <li class="li-button"><button id="done">Done</button></li>
-                        <li class="li-button"> <button id="todo">Todo</button></li>
+                        <li class="li-button"><button id="filterAll">All</button></li>
+                        <li class="li-button"><button id="filterDone">Done</button></li>
+                        <li class="li-button"> <button id="filterTodo">Todo</button></li>
                     </ol>
                 </div>
-            </div>
-            
-
-
-
-
 
         </div>
+        <ul id="todoList"></ul>
 
+    <div class="footer-buttons" >
+        <button class="delete-all" id="deleteAllBtn">Delete All Tasks</button>
+        <button class="delete-done" id="deleteDoneBtn">Delete Done Tasks</button>
+    </div>
+    </div>
+
+    <script src="java.js"></script>
 
 
 
